@@ -17,29 +17,17 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -58,5 +46,42 @@ class DefaultFirebaseOptions {
     messagingSenderId: '834520162961',
     projectId: 'project-firebase26',
     storageBucket: 'project-firebase26.firebasestorage.app',
+  );
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDbRgyREBzazOlxUabtxDc4ZraEyNTIwA4',
+    appId: '1:834520162961:web:0b93664caee0092fcc9530',
+    messagingSenderId: '834520162961',
+    projectId: 'project-firebase26',
+    authDomain: 'project-firebase26.firebaseapp.com',
+    storageBucket: 'project-firebase26.firebasestorage.app',
+    measurementId: 'G-WEHKEPCX84',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyAGwpOaKKcrvWWTeR3lomqnnzlVT-3aEFY',
+    appId: '1:834520162961:ios:ecea57c5e1023802cc9530',
+    messagingSenderId: '834520162961',
+    projectId: 'project-firebase26',
+    storageBucket: 'project-firebase26.firebasestorage.app',
+    iosBundleId: 'com.example.latihanPert8',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyAGwpOaKKcrvWWTeR3lomqnnzlVT-3aEFY',
+    appId: '1:834520162961:ios:ecea57c5e1023802cc9530',
+    messagingSenderId: '834520162961',
+    projectId: 'project-firebase26',
+    storageBucket: 'project-firebase26.firebasestorage.app',
+    iosBundleId: 'com.example.latihanPert8',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyDbRgyREBzazOlxUabtxDc4ZraEyNTIwA4',
+    appId: '1:834520162961:web:5ee61684df7d26b5cc9530',
+    messagingSenderId: '834520162961',
+    projectId: 'project-firebase26',
+    authDomain: 'project-firebase26.firebaseapp.com',
+    storageBucket: 'project-firebase26.firebasestorage.app',
+    measurementId: 'G-LCPEM12MPJ',
   );
 }
