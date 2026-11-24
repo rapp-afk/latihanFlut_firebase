@@ -9,7 +9,8 @@ plugins {
 
 android {
     namespace = "com.example.latihan_pert8"
-    compileSdk = flutter.compileSdkVersion
+    //compileSdk = flutter.compileSdkVersion
+      compileSdk = 37
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
