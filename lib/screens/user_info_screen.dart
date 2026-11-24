@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:latihan_pert8/fcm_token_card.dart';
 
 class UserInfoScreen extends StatelessWidget {
   final User user;
@@ -23,7 +24,7 @@ class UserInfoScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(24.0),
           child: Column(
@@ -62,6 +63,8 @@ class UserInfoScreen extends StatelessWidget {
                       Text(
                         'Terakhir Login: ${user.metadata.lastSignInTime?.toString() ?? "-"}',
                       ),
+                      const SizedBox(height: 16),
+                      const FcmTokenCard(), 
                     ],
                   ),
                 ),
