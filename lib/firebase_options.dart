@@ -57,7 +57,6 @@ class DefaultFirebaseOptions {
     projectId: 'project-firebase26',
     storageBucket: 'project-firebase26.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAGwpOaKKcrvWWTeR3lomqnnzlVT-3aEFY',
     appId: '1:834520162961:ios:d8ba47bc0d51d997cc9530',
@@ -66,7 +65,6 @@ class DefaultFirebaseOptions {
     storageBucket: 'project-firebase26.firebasestorage.app',
     iosBundleId: 'com.example.latihanFlutfirebase9',
   );
-
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyAGwpOaKKcrvWWTeR3lomqnnzlVT-3aEFY',
     appId: '1:834520162961:ios:d8ba47bc0d51d997cc9530',
