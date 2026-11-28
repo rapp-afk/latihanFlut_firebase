@@ -4,9 +4,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:login_firebase/firebase_options.dart';
-import 'package:login_firebase/notification_detail_screen.dart';
-
+import 'package:latihan_flutfirebase_9/firebase_options.dart';
+import 'package:latihan_flutfirebase_9/screens/notification_detail_screen.dart';
 /// Kunci global Navigator, supaya kita bisa pindah halaman
 /// dari luar widget (misalnya saat notifikasi di-klik).
 final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
